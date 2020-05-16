@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+
+</head>
+
+<body>
+  <div style=" margin: 100px; width: 500px; padding: 20px; border: 1px solid green;">
+
+    <h1 id="foo" style="width: 400px; height: 300px; border: 1px solid red;">
+    Curabitur blandit tempus porttitor.
+    </h1>
+  </div>
+
+  <script src="confetti2.js"></script>
+  <script>
+    confetti.setTarget(document.getElementById("foo"));
+    confetti.start(600, 200);
+  </script>
+</body>
+</html>

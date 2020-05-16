@@ -1,6 +1,6 @@
 # confetti.js
 
-The simplest confetti animation overlay for your website! 🙂 (no libraries required - 3.18 KB total) 
+The simplest confetti animation overlay for your website! 🙂 (no libraries required - 3.18 KB total)
 
 Just add the following under `<body>`:
 
@@ -25,15 +25,17 @@ You can call any of the following available functions:
 	confetti.isPaused();    //returns true or false depending on whether the confetti animation is paused
 	confetti.isRunning();   //returns true or false depending on whether the animation is running
 
+	confetti.setTarget();   // HTML element to emit particles from.  Note: Parent element will be used for boundaries.
+
 You can also configure these parameters:
 
+	confetti.margin = 20;        //set the boundary to prevent particles from going outside
+	confetti.maxCount = 150;     //set max confetti count
 	confetti.maxCount = 150;     //set max confetti count
 	confetti.speed = 2;          //set the particle animation speed
 	confetti.frameInterval = 20; //the confetti animation frame interval in milliseconds
 	confetti.alpha = 1.0;        //the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
 	confetti.gradient = false;   //whether to use gradients for the confetti particles
-
-For a live demo, [click here](https://feelingunlucky.today) and search something, anything :)
 
 The demo uses this function:
 
